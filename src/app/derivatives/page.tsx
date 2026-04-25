@@ -1,9 +1,25 @@
 import MathBlock from "@/components/MathBlock";
 import StepByStep from "@/components/StepByStep";
+import Link from "next/link";
 
 export default function DerivativesIntro() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="flex items-center gap-3 mb-6">
+        <Link
+          href="/derivatives/rules"
+          className="text-sm font-medium px-3 py-1.5 rounded-md bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition-colors"
+        >
+          Rules →
+        </Link>
+        <Link
+          href="/derivatives/practice"
+          className="text-sm font-medium px-3 py-1.5 rounded-md bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition-colors"
+        >
+          Practice →
+        </Link>
+      </div>
+
       <h1 className="text-3xl font-bold text-zinc-900 mb-6">Introduction to Derivatives</h1>
       
       <div className="prose prose-zinc max-w-none mb-12">
